@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href=".././PagesC/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="./index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="./PagesH/about.html"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="./PagesH/experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="./PagesH/projects.html"><i class="fas fa-folder"></i> Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <!-- Profile Image -->
+        <div class="profile-container">
+            <div class="glow-ring">
+                <img src="../me.jpeg" alt="Anmol" class="profile-img">
+            </div>
+        </div>
+
+        <!-- Hero Text -->
+        <div class="hero-text">
+            <p class="greeting">Hi, I'm</p>
+            <h1 class="name">Ayush Raj</h1>
+            <div class="divider"></div>
+            <p class="bio">
+                A BCA student passionate about Web Development,<br>
+                Programming, and Technology.<br>
+                Currently completing a Frontend Development<br>
+                Internship at <a href="#" class="highlight">Chipi Technologies.</a><br>
+                <a href="#" class="highlight">Impact College, Patna.</a>
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-bar">
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1ESuKWPsv3/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <span class="divider-line"></span>
+            <a href="https://www.instagram.com/x__ayushraj__x?igsh=MXUxczBocXN3bXp0cg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <span class="divider-line"></span>
+            <a href="https://www.linkedin.com/in/ayush-raj-81bb87325/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <span class="divider-line"></span>
+            <a href="https://github.com/D3ath-Walker" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <span class="divider-line"></span>
+            <a href="https://wa.me/919102768394" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <script>
+    // Fade out before leaving page
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+
+                // Only for internal pages
+                if (href && !href.startsWith('http') && !href.startsWith('#')) {
+                    e.preventDefault();
+                    document.body.style.animation = 'fadeOut 0.3s ease forwards';
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
