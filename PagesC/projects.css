@@ -238,7 +238,6 @@ body::before {
     flex-shrink: 0;
 }
 
-/* ===== PROJECT FOOTER ===== */
 .project-footer {
     display: flex;
     align-items: center;
@@ -249,7 +248,6 @@ body::before {
     border-top: 1px solid rgba(50, 120, 255, 0.12);
 }
 
-/* ===== TECH TAGS ===== */
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +270,6 @@ body::before {
     border-color: #4a9eff;
 }
 
-/* ===== PROJECT LINKS ===== */
 .project-links {
     display: flex;
     gap: 12px;
@@ -316,7 +313,6 @@ body::before {
     transform: translateY(-2px);
 }
 
-/* ===== COMING SOON ===== */
 .coming-soon {
     display: flex;
     align-items: center;
@@ -334,7 +330,6 @@ body::before {
     font-size: 1rem;
 }
 
-/* ===== FIXED SOCIAL BAR ===== */
 .social-bar {
     position: fixed;
     bottom: 0;
@@ -383,7 +378,6 @@ body::before {
     background: rgba(50, 130, 255, 0.25);
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .navbar {
         padding: 12px 20px;

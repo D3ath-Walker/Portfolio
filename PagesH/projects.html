@@ -12,7 +12,6 @@
 </head>
 <body>
 
-    <!-- FIXED NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -22,7 +21,6 @@
         </ul>
     </nav>
 
-    <!-- MAIN CONTENT -->
     <main class="content">
 
         <div class="page-header">
@@ -30,7 +28,6 @@
             <p class="page-sub">Things I've built from scratch — real problems, real solutions.</p>
         </div>
 
-        <!-- PROJECT 1 — HTML Learning Hub -->
         <div class="project-card">
             <div class="project-number">01</div>
             <div class="project-body">
@@ -48,7 +45,6 @@
                     </div>
                 </div>
 
-                <!-- Key Features -->
                 <div class="features-grid">
                     <div class="feature"><i class="fas fa-user-plus"></i> Student Registration & Login</div>
                     <div class="feature"><i class="fas fa-chart-line"></i> Progress Tracking System</div>
@@ -61,7 +57,6 @@
                 </div>
 
                 <div class="project-footer">
-                    <!-- Tech Tags -->
                     <div class="tech-tags">
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
@@ -72,7 +67,6 @@
                         <span class="tag">GitHub</span>
                     </div>
 
-                    <!-- Links -->
                     <div class="project-links">
                         <a href="https://d3ath-walker.github.io/HTML-video-project/" target="_blank" class="btn-primary">
                             <i class="fas fa-external-link-alt"></i> Live Demo
@@ -86,7 +80,6 @@
             </div>
         </div>
 
-        <!-- PROJECT 2 — CCC -->
         <div class="project-card featured">
             <div class="project-number">02</div>
             <div class="project-body">
@@ -106,7 +99,6 @@
                     </div>
                 </div>
 
-                <!-- Key Features -->
                 <div class="features-grid">
                     <div class="feature"><i class="fas fa-user-shield"></i> Admin Dashboard & Control</div>
                     <div class="feature"><i class="fas fa-shield-alt"></i> Anti-Cheat System</div>
@@ -119,7 +111,6 @@
                 </div>
 
                 <div class="project-footer">
-                    <!-- Tech Tags -->
                     <div class="tech-tags">
                         <span class="tag">HTML</span>
                         <span class="tag">CSS</span>
@@ -129,7 +120,6 @@
                         <span class="tag">Render</span>
                     </div>
 
-                    <!-- Links -->
                     <div class="project-links">
                         <a href="https://d3ath-walker.github.io/CCC-Site/" target="_blank" class="btn-primary">
                             <i class="fas fa-external-link-alt"></i> Live Demo
@@ -143,7 +133,6 @@
             </div>
         </div>
 
-        <!-- MORE COMING SOON -->
         <div class="coming-soon">
             <i class="fas fa-rocket"></i>
             <p>More projects coming soon...</p>
@@ -151,7 +140,6 @@
 
     </main>
 
-    <!-- FIXED SOCIAL BAR -->
     <div class="social-bar">
         <div class="social-links">
             <a href="https://www.facebook.com/share/1ESuKWPsv3/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -167,12 +155,10 @@
     </div>
 
       <script>
-    // Fade out before leaving page
         document.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
 
-                // Only for internal pages
                 if (href && !href.startsWith('http') && !href.startsWith('#')) {
                     e.preventDefault();
                     document.body.style.animation = 'fadeOut 0.3s ease forwards';

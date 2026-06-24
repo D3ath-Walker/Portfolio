@@ -12,7 +12,6 @@
 </head>
 <body>
 
-    <!-- FIXED NAVBAR -->
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -22,12 +21,10 @@
         </ul>
     </nav>
 
-    <!-- MAIN CONTENT -->
     <main class="content">
 
         <h2 class="page-title">About <span>Me</span></h2>
 
-        <!-- ABOUT ME BOX -->
         <div class="glass-box">
             <div class="box-header">
                 <i class="fas fa-person"></i>
@@ -41,7 +38,6 @@
             </p>
         </div>
 
-        <!-- SKILLS BOX -->
         <div class="glass-box">
             <div class="box-header">
                 <i class="fas fa-code"></i>
@@ -80,7 +76,6 @@
             </div>
         </div>
 
-        <!-- EDUCATION BOX -->
         <div class="glass-box">
             <div class="box-header">
                 <i class="fas fa-graduation-cap"></i>
@@ -115,7 +110,6 @@
             </div>
         </div>
 
-        <!-- CERTIFICATIONS BOX -->
         <div class="glass-box">
             <div class="box-header">
                 <i class="fas fa-certificate"></i>
@@ -139,7 +133,6 @@
             </div>
         </div>
 
-        <!-- HOBBIES BOX -->
         <div class="glass-box">
             <div class="box-header">
                 <i class="fas fa-gamepad"></i>
@@ -176,7 +169,6 @@
 
     </main>
 
-    <!-- FIXED SOCIAL BAR -->
    <div class="social-bar">
         <div class="social-links">
             <a href="https://www.facebook.com/share/1ESuKWPsv3/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -192,12 +184,10 @@
     </div>
 
       <script>
-    // Fade out before leaving page
         document.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
 
-                // Only for internal pages
                 if (href && !href.startsWith('http') && !href.startsWith('#')) {
                     e.preventDefault();
                     document.body.style.animation = 'fadeOut 0.3s ease forwards';

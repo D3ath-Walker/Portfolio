@@ -12,7 +12,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="./index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
@@ -22,17 +21,14 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
 
-        <!-- Profile Image -->
         <div class="profile-container">
             <div class="glow-ring">
                 <img src="./me.jpeg" alt="Anmol" class="profile-img">
             </div>
         </div>
 
-        <!-- Hero Text -->
         <div class="hero-text">
             <p class="greeting">Hi, I'm</p>
             <h1 class="name">Ayush Raj</h1>
@@ -48,7 +44,6 @@
 
     </section>
 
-    <!-- Social Links -->
     <div class="social-bar">
         <div class="social-links">
             <a href="https://www.facebook.com/share/1ESuKWPsv3/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -64,12 +59,10 @@
     </div>
 
     <script>
-    // Fade out before leaving page
         document.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
 
-                // Only for internal pages
                 if (href && !href.startsWith('http') && !href.startsWith('#')) {
                     e.preventDefault();
                     document.body.style.animation = 'fadeOut 0.3s ease forwards';
